@@ -9,7 +9,7 @@ Must have NodeJS installed locally.
 
 - clone repository
 - ```npm install```
-- ```npm run```
+- ```npm start```
 
 ### Testing
 - ```npm test```
