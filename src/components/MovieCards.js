@@ -10,7 +10,7 @@ const MovieCards = ({ movies, onClick }) => {
           {!m.poster_path ? (
             <div className="placeholder card" />
           ) : (
-            <LazyLoad height={"100%"} offset={-300}>
+            <LazyLoad height={"100%"} offset={-200}>
               <div className="img-wrapper" onClick={() => onClick(m)}>
                 <img
                   className="card-image animated zoomIn card"
