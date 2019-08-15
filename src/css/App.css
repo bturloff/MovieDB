@@ -1,0 +1,181 @@
+.color1 {
+  background-color: #14181e;
+}
+
+.App {
+  min-height: 100vh;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#263238+0,455a64+79 */
+  background: #263238; /* Old browsers */
+  background: -moz-linear-gradient(top, #263238 0%, #455a64 79%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #263238 0%,
+    #455a64 79%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #263238 0%,
+    #455a64 79%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#263238', endColorstr='#455a64',GradientType=0 ); /* IE6-9 */
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+input {
+  color: white;
+}
+
+.input-field {
+  color: #4caf50;
+}
+
+.navbar {
+  margin-bottom: 50px;
+}
+
+.searchForm {
+  max-width: 900px;
+  margin: auto;
+}
+
+.searchForm i {
+  cursor: pointer;
+}
+
+.searchForm > div {
+  display: flex;
+  align-items: center;
+}
+
+.searchForm > div > i {
+  position: absolute;
+  right: 0;
+}
+
+.movie-card {
+  /* border-radius: 8px; */
+  /* height: 200px; */
+  /* width: 240px; */
+  /* overflow: hidden; */
+  height: 300px;
+  /* background-color: blue; */
+  /* width: 25%; */
+  margin-bottom: 20px;
+  /* margin: 0 20px 20px 20px; */
+  /* border: 2px solid red; */
+  /* border-radius: 10px; */
+}
+
+@media only screen and (max-width: 800px) {
+  .card-image {
+    object-fit: contain;
+  }
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  /* object-fit: contain; */
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.movie-grid {
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.placeholder {
+  height: 300px;
+  width: 100%;
+  background-color: lightgray;
+  border-radius: 8px;
+}
+
+.main {
+  max-width: 900px;
+  margin: auto;
+}
+.main > .row {
+  margin-bottom: 0;
+}
+
+.modal-image-wrapper {
+  width: 800px;
+  height: 450px;
+}
+
+.mine {
+  width: 800px;
+  height: 450px;
+  /* you need to match the shadow color to your background or image border for the desired effect*/
+  /* box-shadow: 0 0 35px 35px white inset; */
+  /* box-shadow: 0 0 50px 50px white inset; */
+  /* border-radius: 75px; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.modal-content {
+  display: flex;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  min-height: 360px;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal-content .image-wrapper {
+  position: relative;
+}
+
+.modal-content img {
+  display: block;
+  margin: auto;
+}
+
+.modal-content div:first-child {
+  width: 250px;
+}
+.modal-content div:nth-child(2) {
+  padding: 0 20px;
+  width: 550px;
+}
+
+.error {
+  background-color: lightyellow;
+  margin: 60px;
+  padding: 60px;
+}
+
+.error h3 {
+  margin: 20px 0 20px 10px;
+}
+
+.error p {
+  margin-left: 40px;
+}
+
+.error div {
+  display: flex;
+  align-items: center;
+}
+
+.modal-footer {
+}
+.modal-footer span {
+  float: right;
+  margin: 0 20px 20px 0;
+}

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error should render correctly 1`] = `ShallowWrapper {}`;
+
+exports[`MovieCards renders correctly with movies array 1`] = `ShallowWrapper {}`;
+
+exports[`MovieCards renders correctly with movies array 2`] = `ShallowWrapper {}`;
+
+exports[`Navbar should match snapshot 1`] = `ShallowWrapper {}`;
