@@ -104,7 +104,7 @@ input {
 }
 
 .modal-image-wrapper {
-  width: 800px;
+  max-width: 800px;
   height: 450px;
 }
 
@@ -178,4 +178,8 @@ input {
 .modal-footer span {
   float: right;
   margin: 0 20px 20px 0;
+}
+
+.background-img-placeholder {
+  height: 450px;
 }

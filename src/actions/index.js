@@ -3,7 +3,6 @@ import { API_KEY, BASE_URL } from "../constants/index";
 
 /** Reducer constants */
 export const ADD_MOVIES = "ADD_MOVIES";
-export const REPLACE_MOVIES = "REPLACE_MOVIES";
 export const CLEAR_MOVIES = "CLEAR_MOVIES";
 export const FETCH_ERROR = "FETCH_ERROR";
 export const CLEAR_ERROR = "REMOVE_ERROR";
@@ -11,11 +10,6 @@ export const CLEAR_ERROR = "REMOVE_ERROR";
 /** Add movies array to global state */
 export const addMovies = ({ movies }) => ({
   type: ADD_MOVIES,
-  movies
-});
-
-export const replaceMovies = ({ movies }) => ({
-  type: REPLACE_MOVIES,
   movies
 });
 
@@ -73,7 +67,6 @@ export const fetchMovies = (query, page = 1) => {
         ...axiosConfig
       })
       .then(res => {
-        const updateType = query ? REPLACE_MOVIES : ADD_MOVIES;
         dispatch({ type: ADD_MOVIES, movies: res.data.results });
         dispatch({ type: CLEAR_ERROR });
       })

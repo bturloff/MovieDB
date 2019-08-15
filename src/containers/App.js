@@ -30,7 +30,7 @@ export class App extends React.Component {
    * Close movie modal
    */
   _closeModal = () => {
-    this.setState({ modalIsOpen: false });
+    this.setState({ modalIsOpen: false, movieSelected: null });
   };
 
   /**
@@ -63,11 +63,13 @@ export class App extends React.Component {
     return (
       <div className={`App`}>
         <NavBar />
-        <MovieModal
-          movie={movieSelected}
-          isOpen={modalIsOpen}
-          closeModal={this._closeModal}
-        />
+        {movieSelected && (
+          <MovieModal
+            movie={movieSelected}
+            isOpen={modalIsOpen}
+            closeModal={this._closeModal}
+          />
+        )}
         <SearchForm
           onSubmit={this._handleSubmit}
           onChange={this._handleChange}

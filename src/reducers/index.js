@@ -2,7 +2,6 @@ import {
   ADD_MOVIES,
   FETCH_ERROR,
   CLEAR_ERROR,
-  REPLACE_MOVIES,
   CLEAR_MOVIES
 } from "../actions/index";
 
@@ -12,11 +11,6 @@ const movies = (state = {}, action) => {
       return {
         ...state,
         movies: [...state.movies, ...action.movies]
-      };
-    case REPLACE_MOVIES:
-      return {
-        ...state,
-        movies: action.movies
       };
     case CLEAR_MOVIES:
       return {
